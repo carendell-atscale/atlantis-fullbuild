@@ -30,7 +30,6 @@ jobs:
           file: docker/Dockerfile
           push: false
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.ref }}
-            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:pr
 
       
