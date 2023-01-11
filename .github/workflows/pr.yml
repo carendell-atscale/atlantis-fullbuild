@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           file: docker/Dockerfile
-          push: false
+          push: true
           tags: |
             ghcr.io/${{ github.repository }}:pr
 
