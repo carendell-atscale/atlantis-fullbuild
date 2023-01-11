@@ -27,7 +27,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
-          dockerfile: ./docker/deploy/Dockerfile
+          file: docker/Dockerfile
           push: false
           tags: |
             ghcr.io/${{ github.repository }}:${{ github.ref }}
